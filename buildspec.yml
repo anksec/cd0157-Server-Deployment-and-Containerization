@@ -19,7 +19,6 @@ phases:
       - echo `kubectl version`
       - export PATH=$PWD/:$PATH
       - python -m pip install --upgrade --force pip
-      - pip install --upgrade pip
       - pip install -r requirements.txt
       - pytest test_main.py
       - apt-get update && apt-get -y install jq  && pip install --upgrade awscli
